@@ -16,4 +16,8 @@ class TransportManager extends LaravelTransportManager
 			$config['account']
 		);
 	}
+
+	protected function createElasticEmailTransport() {
+	    return $this->createElasticEmailDriver();
+    }
 }
