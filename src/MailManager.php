@@ -3,7 +3,7 @@
 namespace Chocoholics\LaravelElasticEmail;
 
 use Illuminate\Mail\MailManager as LaravelMailManager;
-if (class_exists(LaravelMailManager)) {
+if (class_exists('Illuminate\Mail\MailManager')) {
     class MailManager extends LaravelMailManager
     {
         protected function createElasticEmailTransport()
