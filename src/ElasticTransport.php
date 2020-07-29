@@ -64,7 +64,7 @@ class ElasticTransport extends Transport
             'api_key' => $this->key,
             'account' => $this->account,
             'msgTo' => $this->getEmailAddresses($message),
-            'replyTo' => $this->getEmailAddresses($message, 'replyTo'),
+            'replyTo' => $this->getEmailAddresses($message, 'getReplyTo'),
             'msgCC' => $this->getEmailAddresses($message, 'getCc'),
             'msgBcc' => $this->getEmailAddresses($message, 'getBcc'),
             'msgFrom' => $this->getFromAddress($message)['email'],
